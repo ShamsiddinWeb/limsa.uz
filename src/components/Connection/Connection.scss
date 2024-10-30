@@ -1,0 +1,283 @@
+
+.connection {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  background-image: url("../../assets/images/formImg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__card-span {
+    width: 160px;
+    height: 3px;
+    background: linear-gradient(to right, #ffeb3b, transparent);
+    margin: 5px auto 0;
+    text-align: start;
+    padding-right: 25px;
+  }
+  &__start {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+  }
+  &__left {
+    &-title {
+      max-width: 700px;
+      font-size: 35px;
+    }
+    &-group {
+      display: flex;
+      gap: 50px;
+    }
+    &-list {
+      flex-direction: column;
+      gap: 20px;
+    }
+    &-item {
+      margin-top: 10px;
+      a {
+        color: #6c6c6c;
+      }
+    }
+    &-text {
+      color: #e5f504;
+    }
+  }
+  &__map {
+    width: 700px;
+    height: 700px;
+  }
+  &__form {
+    width: 45%;
+    padding-right: 40px;
+    &-title {
+      color: #ffffff;
+      font-size: 32px;
+    }
+    input {
+      width: 100%;
+      margin-bottom: 20px;
+      background-color: #363636;
+      padding: 20px;
+      border: none;
+      border-radius: 25px;
+      outline: none;
+      color: #fff;
+    }
+    textarea {
+      resize: none;
+      outline: none;
+      color: #fff;
+      width: 100%;
+      padding: 20px;
+      margin-bottom: 30px;
+      background-color: #363636;
+      padding: 20px;
+      border: none;
+      border-radius: 25px;
+    }
+    &-btn {
+      padding: 15px 60px;
+      border: none;
+      background-color: rgb(251, 255, 0);
+      color: #000000;
+      border-radius: 25px;
+    }
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    gap: 40px;
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      svg {
+        font-size: 40px;
+        color: rgb(229, 255, 0);
+      }
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+.modal {
+  background-color: #282828;
+  text-align: center;
+  padding: 80px;
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  position: fixed;
+  top: 20%;
+  left: 20%;
+  right: 0;
+  // bottom: 0;
+  z-index: 93;
+  border-radius: 20px;
+  &__text {
+    color: #ffffff;
+    font-size: 25px;
+  }
+  &__btn {
+    background-color: rgb(249, 253, 4);
+    padding: 15px 80px;
+    border: none;
+    color: #000000;
+    border-radius: 10px;
+  }
+  &__black {
+    position: fixed;
+    background-color: #000000;
+    transition: .3s;
+    z-index: 30;
+    left: 0px;
+    bottom: 0;
+    top:0px;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+  }
+}
+@media only screen and (max-width: 870px)  {
+  .connection{
+    padding-top: 100px;
+    &__start {
+      text-align: center;
+      flex-direction: column;
+    }
+    &__list  {
+      justify-content: start;
+    }
+    &__left {
+      &-title {
+        font-size: 25px;
+      }
+      &-group  {
+        justify-content: center;
+      }
+    }
+    &__form {
+      width: 90%;
+    }
+    &__map {
+      width: 100%;
+    }
+  }
+}
+@media only screen and (max-width: 700px)  {
+  .modal {
+    left: 10%;
+    &__text {
+      color: #ffffff;
+      font-size: 20px;
+    }
+  }
+}
+@media only screen and (max-width: 600px)  {
+  .connection{
+    padding-top: 50px;
+    &__left {
+      &-title {
+        font-size: 20px;
+      }
+
+    }
+  }
+}
+@media only screen and (max-width: 500px)  {
+  .connection{
+    &__form {
+      &-title{
+        font-size: 24px;
+      } 
+    }
+    &__map {
+      width: 100%;
+      height: 500px;
+    }
+    &__list {
+      gap: 40px;
+      &-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        svg {
+          font-size: 30px;
+          color: rgb(238, 255, 0);
+        }
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .modal {
+    left: 2%;
+    right: 0;
+    width: 57%;
+  }
+}
+@media only screen and (max-width: 400px)  {
+  .modal {
+    max-width: 50%;
+    &__text {
+      font-size: 14px;
+    }
+  }
+}
+@media only screen and (max-width: 400px)  {
+  .connection{
+    &__form {
+      input {
+        width: 95%;
+      }
+      textarea {
+        width: 95%;
+      }
+    }
+    padding-top: 10px;
+    &__card-title {
+      font-size: 16px;
+    }
+    &__end {
+      span {
+        font-size: 12px;
+      }
+    }
+    &__left {
+      &-title {
+        font-size: 16px;
+      }
+      &-group {
+        flex-wrap: wrap;
+      }
+      &-text {
+        font-size: 12px;
+      }
+      a {
+        font-size: 11px;
+      }
+    }
+    &__form {
+      &-title{
+        font-size: 16px;
+      }
+
+    }
+  }
+  .modal {
+    max-width: 45%;
+    &__btn {
+      padding: 15px 30px;
+      font-size: 12px;
+    }
+    &__text {
+      font-size: 12px;
+    }
+  }
+}
