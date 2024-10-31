@@ -48,7 +48,6 @@ const FAQ = (props) => {
             <img className="faq__left-img" src={faqImg2} alt="FAQ Illustration 2" />
           </div>
           <div className="faq__right" data-aos="fade-up">
-            <p className="faq__right-text">{props.t("header__link2")}</p>
             <h2 id="faq-title" className="faq__right-title">
               {props.t("faq__title")}
             </h2>
