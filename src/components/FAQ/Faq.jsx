@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./FAQ.scss";
+import "./Faq.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import faqImg1 from "../../assets/images/faq__img1.png";
