@@ -34,15 +34,15 @@
   }
   &__link {
     padding: 13px 25px;
-    background-color: #E3FF04;
+    background-color: #6c2dba;
     border-radius: 15px;
-    color: #000000;
+    color: #ffffff;
     font-size: 14px;
-    border: 1px solid #E3FF04;
+    border: 1px solid #6c2dba;
   }
   &__link:hover {
     background-color: transparent;
-    border: 1px solid #E3FF04;
+    border: 1px solid #6c2dba;
     color: #ffffff;
   }
   &__list {
@@ -72,7 +72,7 @@
   }
   &__active {
     position: fixed;
-    background-color: #E3FF04;
+    background-color: #6c2dba;
     transition: .3s;
     z-index: 1px;
     left: -800px;
@@ -85,8 +85,8 @@
     border: none;
     background: linear-gradient(
       0deg,
-      #dcec60 0%,
-      #E3FF04 100%
+      #826aa1 0%,
+      #6c2dba 100%
     );
     color: #fff;
     border-radius: 25px;
@@ -147,7 +147,7 @@
   position: absolute;
   width: 20px;
   height: 2px;
-  background-color: rgb(227, 243, 3);
+  background-color: #6c2dba;
   left: 1px;
   transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
 }
@@ -175,7 +175,7 @@
   gap: 15px;
 }
 .active {
-  color: #E3FF04;
+  color: #6c2dba;
 }
 @media only screen and (max-width: 1122px) {
   .header {

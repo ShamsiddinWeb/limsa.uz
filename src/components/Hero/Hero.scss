@@ -36,20 +36,20 @@
 
     .hero__button {
       padding: 0.75rem 1.5rem;
-      background-color: #E3FF04;
-      color: #000000;
+      background-color: #6c2dba;
+      color: #ffffff;
       font-size: 1rem;
       font-weight: 600;
       border: none;
       border-radius: 20px;
       cursor: pointer;
-      border: 2px solid #E3FF04;
+      border: 2px solid #6c2dba;
       transition: background-color 0.3s;
 
       &:hover {
         background-color: transparent;
         color: #fff;
-        border: 2px solid #E3FF04;
+        border: 2px solid #6c2dba;
       }
     }
   }
@@ -73,7 +73,7 @@
       width: 250px;
       overflow: hidden;
       border-radius: 12px;
-      border: 2px solid #E3FF04;
+      border: 2px solid #6c2dba;
       transition: transform 0.3s, box-shadow 0.3s;
 
       &:hover {

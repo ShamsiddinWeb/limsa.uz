@@ -9,7 +9,7 @@
   &__card-span {
     width: 160px;
     height: 3px;
-    background: linear-gradient(to right, #ffeb3b, transparent);
+    background: linear-gradient(to right, #6c2dba, transparent);
     margin: 5px auto 0;
     text-align: start;
     padding-right: 25px;
@@ -39,7 +39,7 @@
       }
     }
     &-text {
-      color: #e5f504;
+      color: #6c2dba;
     }
   }
   &__map {
@@ -78,8 +78,8 @@
     &-btn {
       padding: 15px 60px;
       border: none;
-      background-color: rgb(251, 255, 0);
-      color: #000000;
+      background-color: #6c2dba;
+      color: #ffffff;
       border-radius: 25px;
     }
   }
@@ -96,7 +96,7 @@
       gap: 20px;
       svg {
         font-size: 40px;
-        color: rgb(229, 255, 0);
+        color: #6c2dba;
       }
       a {
         color: #fff;
@@ -123,10 +123,10 @@
     font-size: 25px;
   }
   &__btn {
-    background-color: rgb(249, 253, 4);
+    background-color: #6c2dba;
     padding: 15px 80px;
     border: none;
-    color: #000000;
+    color: #ffffff;
     border-radius: 10px;
   }
   &__black {
@@ -208,7 +208,7 @@
         gap: 20px;
         svg {
           font-size: 30px;
-          color: rgb(238, 255, 0);
+          color: #6c2dba;
         }
         a {
           font-size: 12px;

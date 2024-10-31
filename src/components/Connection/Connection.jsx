@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Connection.scss";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 import { MdOutlineTextsms, MdOutlinePhoneInTalk } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
@@ -26,8 +25,7 @@ const Connection = (props) => {
     e.preventDefault();
 
     const message = `
-      Mijoz Mahsulotni sharhladi: %0A%0A
-      Mijoz Emaili: ${name} %0A
+      Mijoz xabar yubordi: %0A%0A
       Mijoz Telefon Raqami: ${tel} %0A
       Mijoz xabari: ${text} %0A
     `;
@@ -49,9 +47,7 @@ const Connection = (props) => {
     if (/^\d*$/.test(value)) setTel(value);
   };
 
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: false, mirror: true });
-  }, []);
+
 
   return (
     <section
@@ -61,7 +57,7 @@ const Connection = (props) => {
     >
       <div className="container">
         <div className="connection__start">
-          <div className="connection__left" data-aos="fade-right">
+          <div className="connection__left" >
             <h2 className="connection__left-title">
              {props.t("form__title")}
             </h2>
@@ -126,7 +122,7 @@ const Connection = (props) => {
           <form
             className="connection__form"
             onSubmit={handleSubmit}
-            data-aos="fade-right"
+           
             aria-describedby="form-description"
           >
             <h3 id="connection-heading" className="connection__form-title">

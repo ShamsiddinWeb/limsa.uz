@@ -22,7 +22,7 @@
     width: 50%;
     &-text {
       padding: 13px 20px;
-      color: #ff0;
+      color: #6c2dba;
       border-radius: 15px;
       width: 140px;
       text-align: center;
@@ -57,7 +57,7 @@
 
     &.active {
       background-color: transparent;
-      color: #ff0;
+      color: #6c2dba;
     }
   }
   &-answer {
@@ -104,7 +104,7 @@
   width: 500px;
 }
 .breadcrumb-separator {
-  color: #d2f00b;
+  color: #6c2dba;
   margin: 0 5px;
   font-size: 18px;
   font-weight: bold;
@@ -112,7 +112,7 @@
 
 .breadcrumb-item:not(:last-child) {
   /* So'nggi elementga qo'llanilmaydi */
-  color: rgb(241, 223, 14);
+  color: #6c2dba;
   // text-shadow: 0 0 2px rgba(255, 255, 255);
 }
 .scrolling-container {
@@ -132,7 +132,7 @@
   font-weight: bold;
   opacity: 0.2;
   color: #ffffff;
-  -webkit-text-stroke: 1px rgb(252, 214, 0);
+  -webkit-text-stroke: 1px #ffffff;
   -webkit-text-fill-color: transparent;
 }
 

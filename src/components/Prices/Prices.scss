@@ -23,9 +23,9 @@
     align-items: center;
   }
   &-card:hover {
-    border: 1px solid #fbff00;
+    border: 1px solid #6c2dba;
     .prices__left {
-      border-right: 1px solid #fbff00;
+      border-right: 1px solid #6c2dba;
     }
   }
   &__left {
@@ -34,7 +34,7 @@
     border-right: 1px solid #ddd;
     &-title {
       font-size: 1.5rem;
-      color: #fbef08;
+      color: #6c2dba;
     }
     &-text {
       font-size: 1rem;
@@ -57,7 +57,7 @@
       &:before {
         content: "✔";
         margin-right: 0.5rem;
-        color: #eaff00;
+        color: #6c2dba;
       }
     }
   }
@@ -68,19 +68,19 @@
     &-price {
       font-size: 1.2rem;
       font-weight: bold;
-      color: #f2ff00;
+      color: #6c2dba;
       width: 130px;
     }
     &-btn {
-      background-color: #fbff00;
-      color: #000;
+      background-color: #6c2dba;
+      color: #ffffff;
       border: none;
       border-radius: 5px;
       padding: 0.5rem 1rem;
       cursor: pointer;
       font-weight: bold;
       &:hover {
-        background-color: #f6ea08;
+        background-color: #6c2dba;
       }
     }
   }
@@ -98,7 +98,7 @@
       border-right: none;
       &-title {
         font-size: 1.5rem;
-        color: #fbef08;
+        color: #6c2dba;
       }
       &-text {
         font-size: 1rem;
@@ -126,7 +126,7 @@
 
     }
     &-card:hover {
-      border: 1px solid #fbff00;
+      border: 1px solid #6c2dba;
       .prices__left {
         border-right: none;
       }
