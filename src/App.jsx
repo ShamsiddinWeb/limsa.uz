@@ -16,7 +16,7 @@ function App() {
   const handleChange = (event) => {
     const selectedLanguage = event.target.value;
     i18n.changeLanguage(selectedLanguage);
-    localStorage.setItem("i18nextLng", selectedLanguage); // Store selected language in localStorage
+    localStorage.setItem("i18nextLng", selectedLanguage); 
   };
 
   return (
