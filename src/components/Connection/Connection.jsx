@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Connection.scss";
-
+import { TbClockHour3Filled } from "react-icons/tb";
 import { MdOutlineTextsms, MdOutlinePhoneInTalk } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
@@ -169,22 +169,6 @@ const Connection = (props) => {
               <div className="modal__black"></div>
             </div>
           )}
-        </div>
-        <div className="connection__end">
-          <ul className="connection__list" aria-label="Contact Information">
-            <li className="connection__list-item">
-              <MdOutlineTextsms />
-              <a href="mailto:info@bnpfabric.uz">Email: </a>
-            </li>
-            <li className="connection__list-item">
-              <MdOutlinePhoneInTalk />
-              <a href="tel:+998935138833">Тел: +998 (93) 513-88-33</a>
-            </li>
-            <li className="connection__list-item">
-              <IoLocationOutline />
-              <span>{props.t("footer__contact1")}</span>
-            </li>
-          </ul>
         </div>
       </div>
     </section>

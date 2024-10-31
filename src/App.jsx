@@ -8,6 +8,7 @@ import OurServices from "./Pages/Services/Services";
 import Connection from "./components/Connection/Connection";
 import PricesPage from "./Pages/PricesPage/PricesPage";
 import WorkPage from "./Pages/WorkPage/WorkPage";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -31,6 +32,7 @@ function App() {
         </Routes>
       </main>
       <Connection t={t} />
+      <Contact t={t} />
       <Footer t={t} />
     </>
   );

@@ -92,6 +92,14 @@
  "prices__list9" : "High Design Level",
 
  "prices__btn": "Place Order",
- "prices": "Negotiate"
+ "prices": "Negotiate",
+
+ "Contacts" : "Contacts",
+ "contact__title1" : "Address",
+ "contact__title2" : "Phone Number",
+ "contact__title3" : "Working hours",
+ "contact__title4" : "Social Accounts",
+ "contact__text1" : "Tashkent city Yunusabad district",
+ "contact__text2" : "Monday-Saturday"
 }
  
