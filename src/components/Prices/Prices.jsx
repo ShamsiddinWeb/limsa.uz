@@ -8,7 +8,7 @@ const Prices = (props) => {
       description: props.t("prices_text1"),
       features: [
         props.t("prices__list1"),
-        props.t("prices__list2"),
+
         props.t("prices__list3"),
         props.t("prices__list4"),
         props.t("prices__list5"),
@@ -20,7 +20,7 @@ const Prices = (props) => {
       description: props.t("prices_text2"),
       features: [
         props.t("prices__list1"),
-        props.t("prices__list2"),
+
         props.t("prices__list3"),
         props.t("prices__list6"),
         props.t("prices__list7"),
@@ -32,7 +32,7 @@ const Prices = (props) => {
       description: props.t("prices_text3"),
       features: [
         props.t("prices__list1"),
-        props.t("prices__list2"),
+
         props.t("prices__list3"),
         props.t("prices__list8"),
         props.t("prices__list9"),
@@ -46,7 +46,9 @@ const Prices = (props) => {
       <div className="container">
         <div className="prices__start">
           <p className="ourServices__text">{props.t("prices__text")}</p>
-          <h2 id="prices-title" className="work__title">{props.t("prices__title")}</h2>
+          <h2 id="prices-title" className="work__title">
+            {props.t("prices__title")}
+          </h2>
           <div className="prices__group">
             {servicesData.map((service, index) => (
               <div className="prices-card" key={index}>
@@ -63,7 +65,11 @@ const Prices = (props) => {
                 </ul>
                 <div className="prices__right">
                   <div className="prices__right-price">{service.price}</div>
-                  <a href="#order" className="prices__right-btn" aria-label={`${service.title} - ${props.t("prices__btn")}`}>
+                  <a
+                    href="#order"
+                    className="prices__right-btn"
+                    aria-label={`${service.title} - ${props.t("prices__btn")}`}
+                  >
                     {props.t("prices__btn")}
                   </a>
                 </div>

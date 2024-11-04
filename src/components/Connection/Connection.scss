@@ -122,6 +122,28 @@
     opacity: 0.7;
   }
 }
+.phone-input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.phone-prefix {
+  padding: 20px 3px 20px 20px;
+  margin-bottom: 20px;
+  background-color: #363636;
+  border-right: none;
+  font-size: 13px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.phone-input input {
+  width: 100%;
+  border-radius: 0 20px 20px 0;
+  padding: 20px 8px;
+  background-color: #363636;
+}
+
 @media only screen and (max-width: 870px) {
   .connection {
     padding-top: 100px;

@@ -15,11 +15,12 @@ function Header(props) {
   ];
 
   const headerList = data.map((e) => (
-    <li
-      key={e.id}
-      className="header__list-item"
-    >
-      <NavLink to={e.link} className="header__list-link" onClick={() => setToggle(false)}>
+    <li key={e.id} className="header__list-item">
+      <NavLink
+        to={e.link}
+        className="header__list-link"
+        onClick={() => setToggle(false)}
+      >
         {e.title}
       </NavLink>
     </li>
@@ -93,8 +94,12 @@ function Header(props) {
               <span className="header__menu-span"></span>
             </button>
           </div>
-          <a className="header__link" href="tel:+998935138833" aria-label="Call Us">
-            +998 (93) 513-88-33
+          <a
+            className="header__link"
+            href="tel:+998935138833"
+            aria-label="Call Us"
+          >
+            +998 (33) 258 73 58
           </a>
         </div>
       </div>

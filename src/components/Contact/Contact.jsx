@@ -32,7 +32,7 @@ const Contact = (props) => {
                   {props.t("contact__title2")}
                 </h2>
                 <a className="contact__list-text" href="tel:+998935138833">
-                  +998 (93) 513-88-33
+                  +998 (33) 258 73 58
                 </a>
               </div>
             </li>

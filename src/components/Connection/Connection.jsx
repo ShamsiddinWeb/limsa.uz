@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./Connection.scss";
-import { TbClockHour3Filled } from "react-icons/tb";
-import { MdOutlineTextsms, MdOutlinePhoneInTalk } from "react-icons/md";
-import { IoLocationOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
-const BOT_TOKEN = "6708331572:AAGi5u0j5WT-UkQ0u7eU69qHg3ZCE59DKbc";
-const CHAT_ID = "-1002028151929";
+const BOT_TOKEN = "7501742328:AAH-Qu93A_qbSBSv2UypuLKwjUwnClr0jxc";
+const CHAT_ID = "-4563016031";
 
 const Connection = (props) => {
   const [name, setName] = useState("");
@@ -24,30 +21,33 @@ const Connection = (props) => {
   function handleSubmit(e) {
     e.preventDefault();
 
-    const message = `
-      Mijoz xabar yubordi: %0A%0A
-      Mijoz Telefon Raqami: ${tel} %0A
-      Mijoz xabari: ${text} %0A
-    `;
+    let massage = "";
+    massage += `Mijoz xabar yubordi: %0A%0A`;
+    massage += `Mijoz ismi: ${name}} %0A`;
+    massage += `Mijoz Telefon Raqami: +998${tel} %0A`;
+    massage += `Mijoz xabari: ${text} %0A`;
 
-    const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${encodeURIComponent(
-      message
-    )}`;
+    const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${massage}`;
+
     fetch(url);
     setName("");
     setTel("");
     setText("");
+
     setIsModalOpen(true);
+    setTimeout(() => {
+      setIsModalOpen(false);
+    }, 2000);
   }
 
   const closeModal = () => setIsModalOpen(false);
 
-  const handleChange = (e) => {
+  const handlePhoneChange = (e) => {
     const value = e.target.value;
-    if (/^\d*$/.test(value)) setTel(value);
+    if (/^\d*$/.test(value) && value.length <= 9) {
+      setTel(value);
+    }
   };
-
-
 
   return (
     <section
@@ -57,16 +57,14 @@ const Connection = (props) => {
     >
       <div className="container">
         <div className="connection__start">
-          <div className="connection__left" >
-            <h2 className="connection__left-title">
-             {props.t("form__title")}
-            </h2>
-            <p className="connection__left-text">
-            {props.t("form__text")}
-            </p>
+          <div className="connection__left">
+            <h2 className="connection__left-title">{props.t("form__title")}</h2>
+            <p className="connection__left-text">{props.t("form__text")}</p>
             <div className="connection__left-group">
               <div className="connection__left-card">
-                <h3 className="connection__card-title">{props.t("form__list1")}</h3>
+                <h3 className="connection__card-title">
+                  {props.t("form__list1")}
+                </h3>
                 <div className="connection__card-span"></div>
                 <ul className="connection__left-list">
                   <li className="connection__left-item">
@@ -92,17 +90,19 @@ const Connection = (props) => {
                 </ul>
               </div>
               <div className="connection__left-card">
-                <h3 className="connection__card-title">{props.t("form__list2")}</h3>
+                <h3 className="connection__card-title">
+                  {props.t("form__list2")}
+                </h3>
                 <div className="connection__card-span"></div>
                 <ul className="connection__left-list">
                   <li className="connection__left-item">
                     <Link className="connection__left-link" to={"/services"}>
-                      {props.t("form__list3")}
+                      {props.t("contact__title3")}
                     </Link>
                   </li>
                   <li className="connection__left-item">
                     <Link className="connection__left-link" to={"/services"}>
-                      {props.t("form__list4")}
+                      9:00 18:00 {props.t("contact__text2")}
                     </Link>
                   </li>
                   <li className="connection__left-item">
@@ -112,7 +112,7 @@ const Connection = (props) => {
                   </li>
                   <li className="connection__left-item">
                     <Link className="connection__left-link" to={"/services"}>
-                      {props.t("form__list6")}
+                      +998 (33) 258 73 58
                     </Link>
                   </li>
                 </ul>
@@ -122,7 +122,6 @@ const Connection = (props) => {
           <form
             className="connection__form"
             onSubmit={handleSubmit}
-           
             aria-describedby="form-description"
           >
             <h3 id="connection-heading" className="connection__form-title">
@@ -136,14 +135,18 @@ const Connection = (props) => {
               onChange={(e) => setName(e.target.value)}
               aria-label="User Name"
             />
-            <input
-              type="tel"
-              placeholder={props.t("connection__tel")}
-              value={tel}
-              onChange={handleChange}
-              required
-              aria-label="User Phone Number"
-            />
+            <div className="phone-input">
+              <span className="phone-prefix">+998</span>
+              <input
+                type="tel"
+                placeholder="901234567"
+                value={tel}
+                onChange={handlePhoneChange}
+                required
+                aria-label="User Phone Number"
+                maxLength="9"
+              />
+            </div>
             <textarea
               value={text}
               onChange={(e) => setText(e.target.value)}

@@ -26,7 +26,7 @@
       border-radius: 15px;
       width: 140px;
       text-align: center;
-      font-size: 14px;
+      font-size: 10px;
       text-transform: uppercase;
       border: 1px solid #444444;
     }
@@ -50,7 +50,7 @@
     padding: 30px 20px;
     background-color: transparent;
     color: #fff;
-    font-size: 16px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -81,7 +81,7 @@
   padding: 20px;
   display: flex;
   align-items: center;
-  animation: scroll 60s linear infinite;
+  // animation: scroll 60s linear infinite;
   // gap: 30px;
   cursor: pointer;
 }
@@ -132,8 +132,8 @@
   font-weight: bold;
   opacity: 0.2;
   color: #ffffff;
-  -webkit-text-stroke: 1px #ffffff;
-  -webkit-text-fill-color: transparent;
+  // -webkit-text-stroke: 1px #ffffff;
+  // -webkit-text-fill-color: transparent;
 }
 
 .left {
