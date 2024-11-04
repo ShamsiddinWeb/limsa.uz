@@ -7,7 +7,7 @@ import ruTranslation from "../public/locales/ru.json";
 import engTranslation from "../public/locales/eng.json";
 
 // Get the saved language or default to "uz"
-const language = localStorage.getItem("i18nextLng") || "";
+const language = localStorage.getItem("i18nextLng") || "uz";
 
 i18n
   .use(Backend)
